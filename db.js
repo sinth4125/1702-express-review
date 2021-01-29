@@ -1,10 +1,10 @@
 const Sequelize = require('sequelize');
 
 // when you go to start the server, be smarter than me and make sure you have postgres actually running on your machine!
-const db = new Sequelize('postgres://localhost:5432/puppies', {
-  logging: false
+const db = new Sequelize('postgres','postgres','sshO1ZTb3Zg1v6LgjmQQ',{
+  dialect: "postgres",
+  host: 'dbtestweb.cfmj5tyc25av.ap-southeast-1.rds.amazonaws.com'
 });
-
 module.exports = db;
 
 // We'll define associations after we import them here
