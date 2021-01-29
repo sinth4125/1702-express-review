@@ -40,7 +40,7 @@ app.use('/locations', locationsRouter);
 // all routes will eventually hit this by default if response is not sent
 // or if it doesn't hit a route
 app.use('*', function(req, res, next) {
-  res.send('this is my default route');
+  res.send('<h1>404</h1>');
 });
 
 // We aren't doing any specific error handling, just letting express do it itself with it's default

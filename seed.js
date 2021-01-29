@@ -7,6 +7,7 @@ const Park = require('./models/Park');
 const Food = require('./models/Food');
 const Location = require('./models/Location');
 
+
 // each of the following array will be iterated and Created
 const locationData = [
   {
